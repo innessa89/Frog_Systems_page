@@ -1,0 +1,16 @@
+
+.personal-information{
+    margin-top: 10rem;
+    text-align: center;
+}
+.details{
+    color: white;
+}
+.details p{
+    font-size: 24px;
+    color:rgba(220, 220, 220, 0.897);
+}
+.banner-image{
+  width: 100%;
+  max-width: 169px;
+}

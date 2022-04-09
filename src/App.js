@@ -1,11 +1,11 @@
 import './App.css';
 import React from 'react';
-import LogoPage from "./components/LogoPage"
+import AboutMe from "./containers/AboutMe"
 
 function App() {
 
   return (
-    <LogoPage/>
+    <AboutMe/>
   );
 }
 
