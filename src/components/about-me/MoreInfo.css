@@ -32,6 +32,7 @@ button:hover{
 
 .info-span{
     margin-left:auto;
+    transform: translateX(12%);
 }
 .info-icon{
     margin-left:auto;

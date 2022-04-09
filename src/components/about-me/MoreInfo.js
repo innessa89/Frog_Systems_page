@@ -2,18 +2,15 @@ import React from "react";
 import {BiInfoCircle} from "react-icons/bi"
 import './MoreInfo.css'
 
-function MoreInfo() {
+function MoreInfo(props) {
+    const { webLink } = props;
     const onClick = (e) => {e.preventDefault(); 
-        window.location.href='https://frogsystems.co.uk/'};
+        window.location.href= webLink};
     return (
         <div className="more-info">
             <button onClick={onClick} className="button-wrapper">
-                <div className="info-span">
-                    <span>More info</span>
-                </div>
-                <div className="info-icon">
-                    <BiInfoCircle/> 
-                </div>
+                <span className="info-span">More info</span>
+                <BiInfoCircle size="30px" className="info-icon"/> 
             </button>
         </div>
     );

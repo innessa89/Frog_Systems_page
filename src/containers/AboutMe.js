@@ -1,24 +1,25 @@
 import React from "react";
 import './AboutMe.css'
 import {
-    faFacebook,
-    faTwitter,
-    faLinkedin,
+    fab as brandIcons
   } from "@fortawesome/free-brands-svg-icons";
 import SocialMediaLink from "../components/about-me/SocialMediaLink";
 import CompanyProfile from "../components/about-me/CompanyProfile";
 import MoreInfo from "../components/about-me/MoreInfo";
 
 function AboutMe(){
+
+    const frogSystemsInfo = require('../data/FrogSystemsInfo.json');
     return(
-        <div className="main-logo-page">
-            <CompanyProfile/>
-            <div className="social">
-                <SocialMediaLink href={"https://www.facebook.com/frogsystems"} icon={faFacebook}/>
-                <SocialMediaLink href={"https://twitter.com/frogsystemsltd"} icon={faTwitter}/>
-                <SocialMediaLink href={"https://www.linkedin.com/company/frog-systems-ltd/"} icon={faLinkedin}/>
-            </div>
-            <MoreInfo/>
+        <div className="about-me-page">
+                <CompanyProfile profile={frogSystemsInfo.companyProfile}/>
+                <div className="social-media-parent">
+                    <div className="social-media">
+                        {(frogSystemsInfo.socialMediaLinks.map((socialMediaLink) => 
+                         <SocialMediaLink href={socialMediaLink.href} icon={brandIcons[socialMediaLink.icon]}/>))}
+                    </div>
+                </div>
+                <MoreInfo webLink={frogSystemsInfo.webLink}/>
         </div>  
     );
 }

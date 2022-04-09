@@ -1,0 +1,22 @@
+{
+    "companyProfile": {
+        "name": "Tod Frogalicious",
+        "department": "Research & Development",
+        "companyName": "Frog Systems"
+    },
+    "socialMediaLinks": [
+        {
+            "href": "https://www.facebook.com/frogsystems",
+            "icon": "faFacebook"
+        },
+        {
+            "href": "https://twitter.com/frogsystemsltd",
+            "icon": "faTwitter"
+        },
+        {
+            "href": "https://www.linkedin.com/company/frog-systems-ltd/",
+            "icon": "faLinkedin"
+        }
+    ],
+    "webLink": "https://frogsystems.co.uk/"
+}

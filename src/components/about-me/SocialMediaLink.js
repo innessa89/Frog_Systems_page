@@ -4,6 +4,7 @@ import './SocialMediaLink.css';
 
 function SocialMediaLink(props){
     const {href, icon} = props;
+
     return (
         <a href={href}>
             <FontAwesomeIcon icon={icon} size="2x" />

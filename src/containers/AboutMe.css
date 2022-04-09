@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.main-logo-page{
+.about-me-page{
     position: absolute;
     font-family:Arial, Helvetica, sans-serif;
     height: 100%;
@@ -13,9 +13,16 @@
     background: linear-gradient(0deg, rgba(16,101,105,1) 0%, rgba(34,193,195,1) 100%);
 }
 
-.social{
+.social-media-parent{    
+    margin-left: 50%;
+    transform: translateX(-50%);
+    max-width:200px;
+}
+
+.social-media{
     display: flex;
-    align-items: center;
-    justify-content: center;
+
+    justify-content: space-between;
     padding: 20px;
+
 }
