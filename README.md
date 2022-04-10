@@ -8,13 +8,13 @@ The "About Me" card build using Javascript. Nowadays, React one of the most popu
 
 To get application running you must install all the dependencies. In the terminal navigate to the app folder and run the commaned below:
 
- npm install 
+ `npm install`
 
 ### How to Run 
 
 In the same forlder run the following code:
 
-npm start
+`npm start`
 
 This command will open the app in development mode in a browser window ( http://localhost:3000 )
 
