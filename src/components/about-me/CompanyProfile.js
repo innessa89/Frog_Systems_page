@@ -6,7 +6,9 @@ function CompanyProfile(props){
   
     return (
         <div className="personal-information">
-            <img className = "banner-image" src={require('../../assets/frog.gif')}/>
+            <div className="frog-image">
+                <img className = "banner-image" src={require('../../assets/frog.gif')}/>
+            </div>
             <div className="details">
                 <h1>{name}</h1>
                 <p>{department}</p>
